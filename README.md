@@ -1,24 +1,45 @@
-# README
+# Conference calls on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a simple example of hosting a conference call with Twilio in a Ruby on Rails application.
 
-Things you may want to cover:
+## Running the application
 
-* Ruby version
+Make sure you have the following:
 
-* System dependencies
+* [Ruby](ruby-lang.org/) and [Bundler](https://bundler.io/) installed
+* A Twilio account ([sign up for a free account here](https://www.twilio.com/try-twilio))
+* A [Twilio phone number](https://www.twilio.com/user/account/phone-numbers/incoming) that can receive incoming calls
+* [ngrok](https://ngrok.com) for [testing webhooks with our local application](https://www.twilio.com/user/account/phone-numbers/incoming)
 
-* Configuration
+Clone or download the repo:
 
-* Database creation
+```bash
+git clone https://github.com/philnash/conferences-on-rails.git
+cd conferences-on-rails
+```
 
-* Database initialization
+Install the dependencies:
 
-* How to run the test suite
+```bash
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Start the application:
 
-* Deployment instructions
+```bash
+bundle exec rails server
+```
 
-* ...
+Start ngrok exposing port 3000:
+
+```bash
+ngrok http 3000
+```
+
+Take the ngrok URL, add the path `/calls`, open the edit page for your Twilio phone number and enter it in the field marked "When a call comes in". The full URL should look like: `https://YOUR_NGROK_SUBDOMAIN.ngrok.io/calls`. Save the number.
+
+Place a phone call to your Twilio number, you will now be on hold waiting for your conference call to start.
+
+## LICENSE
+
+MIT © Phil Nash 2020
