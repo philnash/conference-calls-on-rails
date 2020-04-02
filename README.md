@@ -14,8 +14,8 @@ Make sure you have the following:
 Clone or download the repo:
 
 ```bash
-git clone https://github.com/philnash/conferences-on-rails.git
-cd conferences-on-rails
+git clone https://github.com/philnash/conference-calls-on-rails.git
+cd conference-calls-on-rails
 ```
 
 Install the dependencies:
