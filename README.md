@@ -1,6 +1,6 @@
 # Conference calls on Rails
 
-This application is a simple example of hosting conference calls with Twilio in a Ruby on Rails application.
+This application is an example of hosting conference calls with Twilio in a Ruby on Rails application.
 
 There are three types of conference call available and blog posts to describe how to build and run them.
 
