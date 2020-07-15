@@ -36,12 +36,12 @@ Copy the `config/env.yml.example` to `config/env.yml` and fill in the details:
 
 | Environment variable | Meaning |
 |----------------------|---------|
-| CONFERENCE_PIN       | A static passcode to protect conference calls using the `ProtectedCallsController` |
-| TWILIO_ACCOUNT_SID   | Your Account Sid from the [Twilio console](https://www.twilio.com/console) |
-| TWILIO_AUTH_TOKEN    | Your Auth Token from the [Twilio console](https://www.twilio.com/console) |
-| VERIFY_SERVICE_SID   | A Verify Service Sid, [create the service in your Twilio console](https://www.twilio.com/console/verify/services) |
-| PERMITTED_CALLERS    | A comma separated list of [e.164 formatted phone numbers](https://www.twilio.com/docs/glossary/what-e164) that are permitted to join a conference call using the `VerifiedCallsController` |
-| MODERATOR            | An [e.164 formatted phone number](https://www.twilio.com/docs/glossary/what-e164) that is allowed to moderate conference calls using the `VerifiedCallsController` |
+| `CONFERENCE_PIN`     | A static passcode to protect conference calls using the `ProtectedCallsController` |
+| `TWILIO_ACCOUNT_SID` | Your Account Sid from the [Twilio console](https://www.twilio.com/console) |
+| `TWILIO_AUTH_TOKEN`  | Your Auth Token from the [Twilio console](https://www.twilio.com/console) |
+| `VERIFY_SERVICE_SID` | A Verify Service Sid, [create the service in your Twilio console](https://www.twilio.com/console/verify/services) |
+| `PERMITTED_CALLERS`  | A comma separated list of [e.164 formatted phone numbers](https://www.twilio.com/docs/glossary/what-e164) that are permitted to join a conference call using the `VerifiedCallsController` |
+| `MODERATOR`          | An [e.164 formatted phone number](https://www.twilio.com/docs/glossary/what-e164) that is allowed to moderate conference calls using the `VerifiedCallsController` |
 
 Start the application:
 
