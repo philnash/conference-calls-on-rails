@@ -14,7 +14,7 @@ class VerifiedCallsController < ApplicationController
       twiml.say(voice: "alice", message: "Sorry, I don't recognize the number you're calling from.")
       twiml.hangup
     end
-    render :xml
+    render xml: twiml
   end
 
   def verify
@@ -32,7 +32,7 @@ class VerifiedCallsController < ApplicationController
       twiml.say(voice: "alice", message: "Sorry, that code is incorrect.")
       twiml.redirect(verified_calls_welcome_path)
     end
-    render :xml
+    render xml: twiml
   end
 
   private
